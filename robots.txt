@@ -1,0 +1,55 @@
+# UniqueAdz - Robots.txt
+# This file tells search engines which pages to crawl and which to ignore
+
+# Allow all bots to crawl the site
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /about.html
+Allow: /services.html
+Allow: /portfolio.html
+Allow: /blog.html
+Allow: /contact.html
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Allow: /assets/
+
+# Disallow admin and private directories
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /backup/
+
+# Disallow specific file types
+Disallow: /*.pdf$
+Disallow: /*.zip$
+
+# Sitemap location
+Sitemap: https://uniqueadz.com/sitemap.xml
+
+# Crawl delay (in seconds) - adjust based on server capacity
+Crawl-delay: 1
+
+# Request rate (pages per second)
+Request-rate: 1/1s
+
+# Specific rules for Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Specific rules for Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Block bad bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /

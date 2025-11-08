@@ -777,3 +777,22 @@ a:hover {
 .py-1 { padding: 1rem 0; }
 .py-2 { padding: 2rem 0; }
 .py-3 { padding: 3rem 0; }
+.service-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+/* For tablets and mobile, make it stack vertically */
+@media (max-width: 768px) {
+    .service-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .service-grid img {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+    }
+}
